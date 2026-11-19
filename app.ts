@@ -1,10 +1,10 @@
 import { fastify } from 'fastify'
-import { SelecionarCandidaturas } from './functions/select_functions.js';
+import { SelecionarCandidaturas } from './functions/select_functions.ts';
 
 const server = fastify();
 
 server.get('/SelecionarCandidaturas', () => {
-  return SelecionarCandidaturas();
+  return SelecionarCandidaturas(0);
 })
 
 server.listen({
