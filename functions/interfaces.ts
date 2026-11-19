@@ -1,5 +1,5 @@
 export interface Candidatura {
-    cdUser: number;
+    cd_user: number;
     descricao_vaga: string;
     nome_empresa: string;
     data_candidatura: string;
@@ -11,18 +11,18 @@ export interface Candidatura {
     endereco_empresa: string;
     observacoes: string;
     criado_em: string;
-    requisitos: string;
+    requisitos: string[];
 }
 
 export interface Etapa {
-    cdUser: number;
+    cd_user: number;
     candidatura_id: string;
     nome_etapa: string;
     data_etapa: string;
 }
 
 export interface DadosCandidato {
-    cdUser: number;
+    cd_user: number;
     nome_completo: string;
     email: string;
     telefone: string;
