@@ -1,4 +1,4 @@
-import sql from "../db.js";
+import sql from "../db.ts";
 
 export async function SelecionarCandidaturas(cd_user: number){
     const candidaturas = await sql `SELECT * FROM candidaturas WHERE cd_user = ${cd_user}`

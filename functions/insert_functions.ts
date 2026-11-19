@@ -1,4 +1,4 @@
-import sql from "../db.js";
+import sql from "../db.ts";
 import { Candidatura, Etapa, DadosCandidato } from './interfaces.ts'
 
 export async function InserirCandidaturas(candidatura: Candidatura){
@@ -12,7 +12,7 @@ export async function InserirCandidaturas(candidatura: Candidatura){
 
 export async function InserirEtapaCandidatura(etapa: Etapa){
 
-    await sql `INSERT INTO etapas_candidatura (id, cd_user, candidatura_id, nome_etapa, data_etapa) 
+    await sql `INSERT INTO etapas_candidatura (cd_user, candidatura_id, nome_etapa, data_etapa) 
     VALUES (${etapa.cd_user}, ${etapa.candidatura_id}, ${etapa.nome_etapa},
     ${etapa.data_etapa})`
 }

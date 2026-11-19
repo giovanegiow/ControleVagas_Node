@@ -1,4 +1,4 @@
-import sql from "../db.js";
+import sql from "../db.ts";
 import { Candidatura, DadosCandidato } from './interfaces.ts'
 
 export async function EditarCandidatura(candidatura: Candidatura, id: string){

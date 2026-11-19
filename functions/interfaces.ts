@@ -33,7 +33,7 @@ export interface DadosCandidato {
     cargo_objetivo: string;
     nivel_experiencia: string;
     resumo_profissional: string;
-    tecnologias: string;
+    tecnologias: string[];
     modalidade_preferida: string;
     pretensao_salarial: number;
     disponibilidade: string;
